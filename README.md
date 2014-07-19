@@ -5,7 +5,7 @@ This is a module for Zend Framework 2. It provides a flexible, lightweight conte
 
 #### Features
 * Content can be fetched from a database (or any other interface can be set up too)
-* Full page cashing including layout (This is mainly why I based this code on "PhlySimplePage")
+* Full page cashing including layout (This is mainly why I based this code of "PhlySimplePage")
 * HTML-Metatags and title-tag can be set for each page individually
 
 ## Usage
@@ -75,7 +75,7 @@ Has the following keys:
 **'controller' (mandatory)**
 Should always be `'MtSimpleCms\Controller\Page'`
 
-**'page_model' (mandatory)* *
+**'page_model' (mandatory)**
 Specify the name of your page model which you set up in the service config of your module (see above).
 
 **'title' (optional)**
