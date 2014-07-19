@@ -72,25 +72,28 @@ May contain up to three levels (lv). Thus a valid route may be something like /f
 ### The 'defaults' key:
 Has the following keys:
 
-*'controller' (mandatory)*
-
+**'controller' (mandatory)**
 Should always be `'MtSimpleCms\Controller\Page'`
 
-*'page_model' (mandatory)* 
+**'page_model' (mandatory)* *
 Specify the name of your page model which you set up in the service config of your module (see above).
-*'title' (optional)*
+
+**'title' (optional)**
 Do you wish that the HTML title tag of your application always contains a certain prefix or suffix? Then use this key and be sure to include `%s` for the individual page title. For example with `'title' => 'Foo - %s'` the "About Us" page will get `<title>Foo - About Us</title>`.
-*'meta_names' (optional)*
+
+**'meta_names' (optional)**
 Similar to title. This array may contain the following keys:
-*'keywords' (optional)*
+
+**'keywords' (optional)**
 Specify a pattern for the HTML keywords meta tag. 
 `'keywords' => array('Foo, Bar, %s', false)` or just `'keywords' => 'Foo, Bar, %s'` will only add the pattern, if the requested page also has keywords specified. If the page has no keywords then MtSimpleCms will not render the keywords meta tag at all.
 `'keywords' => array('Foo, Bar, %s', true)` will always render the keywords meta tag with just "Foo, Bar" as its contents if the given page has no keywords specified.
-*'description (optional)'*
+
+**'description (optional)'**
 Specify a pattern for the HTML description meta tag.
 Same behaviour as 'keywords'.
 
-*'meta_props' (optional)*
+**'meta_props' (optional)**
 An array of HTML meta property tags. For each property you may again set a template or default pattern. See 'keywords' for usage.
 
 #### Your layout
