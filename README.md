@@ -71,8 +71,11 @@ Example:
 May contain up to three levels (lv). Thus a valid route may be something like /foo/bar/bat/baz.
 ### The 'defaults' key:
 Has the following keys:
+
 *'controller' (mandatory)*
+
 Should always be `'MtSimpleCms\Controller\Page'`
+
 *'page_model' (mandatory)* 
 Specify the name of your page model which you set up in the service config of your module (see above).
 *'title' (optional)*
