@@ -1,0 +1,35 @@
+{
+    "name": "mtrippodi/mtsimplecms",
+    "description": "ZF2 CMS Module",
+    "type": "library",
+    "keywords": [
+        "zf2",
+        "zend",
+        "module",
+	"CMS"
+    ],
+    "homepage": "https://github.com/mtrippodi/MtSimpleCms",
+    "authors": [
+        {
+            "name": "Michael Trippodi",
+            "email": "mail@trippodi.com"
+        }
+    ],
+    "autoload": {
+        "psr-0": {
+            "MtSimpleCms\\": "src/"
+        },
+        "classmap": [
+            "./"
+        ]
+    },
+    "require": {
+        "php": ">=5.3.3",
+        "zendframework/zend-console": "2.*",
+        "zendframework/zend-eventmanager": "2.*",
+        "zendframework/zend-http": "2.*",
+        "zendframework/zend-mvc": "2.*",
+        "zendframework/zend-stdlib": "2.*",
+        "zendframework/zend-view": "2.*"
+    }
+}
